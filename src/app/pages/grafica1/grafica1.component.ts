@@ -10,10 +10,12 @@ export class Grafica1Component {
 
   labels1: string[]=[
     'Download Sales',
-    'In-Store Sales',
+    'Pene',
     'Mail-Order Sales',
   ]
 
-  public data1 = [350, 450, 100];
+  public data1 = [350, 600, 100];
+
+  backgroundColor1 = ['#6857E6', '#009FEE', '#F02059'];
 
 }

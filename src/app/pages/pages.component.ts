@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-page',
@@ -6,6 +6,18 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class PageComponent {
+export class PageComponent implements OnInit{
+
+  public linkTheme = document.querySelector('#theme');
+
+  constructor(){
+
+   }
+
+  ngOnInit(): void {
+
+    const url = localStorage.getItem('theme') || './assets/css/colors/purple.css'
+    this.linkTheme?.setAttribute('href',url);
+  }
 
 }

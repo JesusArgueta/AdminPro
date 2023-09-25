@@ -11,6 +11,7 @@ import { PageComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { ProgressComponent } from './progress/progress.component';
+import { AccountSettingComponent } from './account-setting/account-setting.component';
 
 
 
@@ -21,6 +22,7 @@ import { ProgressComponent } from './progress/progress.component';
     ProgressComponent,
     Grafica1Component,
     PageComponent,
+    AccountSettingComponent,
   ],
   imports: [
     CommonModule,
